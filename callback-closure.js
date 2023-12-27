@@ -10,3 +10,9 @@ function createStringAppender() {
     callback(body);
   };
 }
+
+const appendString = createStringAppender();
+
+function splitString(stringParams) {
+  return stringParams.split(' ');
+}
