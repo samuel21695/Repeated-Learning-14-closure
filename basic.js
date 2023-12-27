@@ -20,3 +20,8 @@ function appendString(stringArray, callback) {
   });
   callback(body);
 };
+
+console.log(appendString(splitString(stringExample), (body) => {
+  console.log(body);
+  console.log(body.length);
+}));
