@@ -16,3 +16,9 @@ const appendString = createStringAppender();
 function splitString(stringParams) {
   return stringParams.split(' ');
 }
+
+// appendString을 사용
+appendString(splitString(stringExample), (body) => {
+  console.log(body);
+  console.log(body.length);
+});
